@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:rgb(19, 34, 39);
+    width: 100vw;
+}
+
+.container {
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    width: 1536px;
+}
+
+.header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    color:rgb(235, 226, 226);
+    font-family: "Roboto", sans-serif;
+    justify-content: space-between;
+}
+
+
+.logo-wrapper {
+    margin-left:20px
+}
+
+.logo {
+    color:inherit;
+    font-size: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Roboto",sans-serif;
+}
+
+.logo span {
+    color:rgb(233, 69, 4);
+}
+
+.navbar-link {
+    height: 90%;
+    color: #eedede;
+    margin-right: 90px;
+    display: flex;
+    align-items:center;
+}
+
+.navbar-link li {
+    list-style: none;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-link li a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.resume-btn {
+    background: rgb(160, 6, 65);
+    box-shadow: 0 0 9px 2px rgb(160, 6, 65);
+    color:white;
+    font-weight: 600;
+    font-size:18px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 9px;
+    transition: opacity .3s ease-in-out;
+}
+
+.resume-btn:hover {
+    opacity: .7;
+}
+
+.navbar-link li:hover {
+    background-color: rgb(134, 135, 151);
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    margin-inline: auto;
+    width: 95%;
+    padding-top: 10px;
+}
+
+.my-img {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-img img {
+    width: 30%;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.middle-section .greetings {
+    text-transform: uppercase;
+    color: rgb(202, 198, 198);
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.my-knowledge {
+    width: 460px;
+}
+
+.my-knowledge h2 {
+    font-size: 2.9em;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(209, 202, 202);
+    opacity: .8;
+}
+
+.brief-intro {
+    text-align: center;
+    width: 770px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.brief-intro p {
+    font-size: 20px;
+    color: rgb(230, 226, 226);
+    margin-bottom: 25px;
+
+}
+
+.brief-intro span {
+    color: rgb(160, 6, 65);
+}
+
+.brief-intro-btn {
+    background: rgb(160, 6, 65);
+    box-shadow: 0 0 9px 2px rgb(160, 6, 65);
+    color:white;
+    font-weight: 600;
+    font-size:18px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 9px;
+    transition: opacity .3s ease-in-out;
+}
+
+.brief-intro-btn:hover {
+    opacity: .7;
+}
+
+
+
+.third-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+
+.about-wrapper {
+    height: 310px;
+    width:800px;
+}
+
+.about-wrapper h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-me {
+    font-size: 20px;
+    color: rgb(223, 223, 223);
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.about-me span {
+    cursor: pointer;
+    font-weight: bold;
+    color:rgb(160, 6, 65);
+}
+
+.about-me a {
+    text-decoration: none;
+}
+.about-me a:link {
+    color:rgb(25, 25, 247);
+}
+
+.about-img {
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.final-section {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-section h1 {
+    color: white;
+}
+
+.svg {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.svg .icon{
+    color: white;
+    width: 50px;
+    height: 50px;
+    cursor:pointer;
+    margin-left: 10px;
+
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.icon:hover {
+    color:lightblue;
+}
+
+/*2xL Extra Extra Large*/
+@media (max-width:1536px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+
+/*XL Extra Large*/
+@media (max-width:1280px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .my-knowledge {
+        width:300px;
+    }
+
+    .my-knowledge h2 {
+        font-size: 2em;
+    }
+
+    .brief-intro {
+        width:600px;
+    }
+}
+
+/*lg  Large*/
+@media (max-width:1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .resume-btn {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+
+    .navbar-link li {
+        font-size: 15px;
+    }
+
+
+    .my-knowledge h2 {
+        font-size: 1.5em;
+    }
+
+    .my-knowledge {
+        width:230px;
+    }
+
+
+    .about-wrapper {
+        width:350px;
+        
+    }
+
+    .about-me {
+        font-size: 18px;
+    }
+
+    .about-img {
+        width: 250px;
+    }
+}
+
+/*ms medium screen*/
+@media (max-width:768px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-link {
+        display: none;
+    }
+
+    .brief-intro {
+        width:500px;
+    }
+
+    .third-section {
+        flex-direction: column;
+    }
+}
+
+/*sm small screen*/ 
+@media (max-width:640px) {
+    .container {
+        max-width: 475px;
+    }
+
+    .my-knowledge {
+        width: 400px;
+    }
+    .my-knowledge h2{
+        font-size: 1em;
+    }
+
+    .brief-intro {
+        width:380px;
+    }
+
+    .brief-intro p {
+        font-size: 14px;
+    }
+
+    .brief-intro-btn {
+        font-size: 12px;
+        padding:1em 1em;
+    }
+}
+
+/*xs extra small screen*/
+@media (max-width:475px) {
+    .container {
+        width:100%
+    }
+
+    .brief-intro {
+        width:300px;
+    }
+
+    .about-me {
+        font-size: 16px;
+    }
+
+    .final-section h1 {
+        font-size: 1.3rem;
+    }
+
+    .svg .icon{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+
